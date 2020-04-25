@@ -1,8 +1,13 @@
+$title-color: #fff !default
+$title-strong-color: #fff
+$content-heading-color: white
+$label-color: white
+
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
 // Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
+$kaldi-red: #fff
 $kaldi-red-invert: #fff
 
 $primary: $kaldi-red
@@ -10,8 +15,14 @@ $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
+.title
+  color: $title-color
+  strong
+    color: $title-strong-color
+
 .navbar .navbar-menu
   box-shadow:none !important
+
 
 .content .taglist
   list-style: none
@@ -44,7 +55,7 @@ $black: #2b2523
 
 .full-width-image
     width: 100vw
-    height: 400px
+    height: 500px
     background-size: cover
     background-position: bottom
     display: flex
@@ -54,17 +65,19 @@ $black: #2b2523
 .btn
     display: inline-block
     padding: 12px 16px 10px
+    border-
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
     background-color: #fff
     border-radius: .25rem
+    boder-color: #434343
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #434343
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px #434343
+    box-shadow: inset 0 0 0 2px black
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -78,6 +91,15 @@ $black: #2b2523
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
+
+.background
+  background-color: #434343
+  color: white
+
+
+.navbar-brand
+  background-color: rgb(247, 200, 115)
+
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
@@ -92,6 +114,7 @@ $menu-item-active-color: $kaldi-red-invert
 $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
+
 
 
 .menu-label
@@ -118,6 +141,7 @@ $menu-label-color: $white-ter
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
+  color: black
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;

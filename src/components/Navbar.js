@@ -35,7 +35,8 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar"
+        style={{backgroundColor: "transparent"}}
         role="navigation"
         aria-label="main-navigation"
       >
@@ -59,24 +60,19 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+            <div className="navbar-end has-text-centered">
+              <Link className="navbar-item" style={{color: "white"}} to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link className="navbar-item" style={{color: "white"}} to="/services">
+               Services 
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" style={{color: "white"}} to="/blog">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" style={{color: "white"}} to="/contact">
                 Contact
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"

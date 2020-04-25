@@ -40,9 +40,9 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+              'rgb(247, 200, 115) 0.5rem 0px 0px, rgb(247, 200, 115) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(247, 200, 115)',
+            color: '#434343',
             lineHeight: '1',
             padding: '0.25em',
           }}
@@ -53,9 +53,9 @@ export const IndexPageTemplate = ({
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
             boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+              'rgb(247, 200, 115) 0.5rem 0px 0px, rgb(247, 200, 115) -0.5rem 0px 0px',
+            backgroundColor: 'rgb(247, 200, 115)',
+            color: '#434343',
             lineHeight: '1',
             padding: '0.25em',
           }}
@@ -66,21 +66,21 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
+        <div className="section has-text-white-bis">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h1 className="title" style={{color: "white"}}>{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h3 className="subtitle" style={{color: "white"}}>{mainpitch.description}</h3>
                   </div>
                 </div>
                 <div className="columns">
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="has-text-weight-semibold is-size-2" style={{color: "white"}}>
                       {heading}
                     </h3>
                     <p>{description}</p>
@@ -89,13 +89,13 @@ export const IndexPageTemplate = ({
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+                    <Link className="btn" to="/services">
+                      My Services
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
+                  <h3 className="has-text-weight-semibold is-size-2" style={{color: "white"}}>
                     Latest stories
                   </h3>
                   <BlogRoll />

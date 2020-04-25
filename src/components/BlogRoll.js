@@ -31,7 +31,8 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title has-text-primary has-text-black-bis is-size-3"
+                      style={{color: "black"}}
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
